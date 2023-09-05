@@ -36,18 +36,17 @@ h2 {
 }
 
 section {
-    /*border-top: 1px gray solid;*/
-    /*margin-top: 10px;*/
+
     flex: 7 1 0%;
     padding: 20px;
     width: 75%;
 }
 
-
+div {
+    display: block;
+}
 
 aside{
-
-
     flex: 3 1 0%;
     background-color:rebeccapurple;
     color: #ffffff;
@@ -63,3 +62,25 @@ aside{
     transform: translateY(-50%);
     font-weight: bold;
   } 
+
+  .date_text_flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date_flex{
+    display: flex;
+    padding-right: .25rem;
+    font-size: .75rem;
+  }
+
+  .text_flex1{
+    flex: 1 1;
+    padding-right: 1rem;
+    
+  }
+
+  .text_flex2{
+    flex: 5 1;
+    min-width: 0;    
+  }
