@@ -2,25 +2,34 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/stylex1.css" />
     <title>Currículo de John Doe</title>
     <script src="./js/retract.js"></script>
   </head>
 
   <body>
-    <header>
-      <h1>Pedro Ventura</h1>
-      <h3>Analista de Testes de Software</h3>
+    <header class="row">
+      <div class="py-2">
+        <h1>Pedro Ventura</h1>
+        <h3>Analista de Testes de Software</h3>
+      </div>
     </header>
-    <main>
-      <section>
+    <main class="row">
+      <section class="col-md-8">
         <article>
           <h2>
             Resumo
             <hr />
           </h2>
-
-          <p>
+          <div>
+            <!--<p>
             Atuo na área de TI há 3 anos e venho me aprimorando no segmento de
             Testes de Software.<br />
             Desenvolvi e aprimorei meus conhecimentos em Empresa de sistemas do
@@ -32,7 +41,117 @@
             necessidade/prioridade, criação de cenários de teste e sugestões de
             correções e melhorias a partir da identificação de demandas.<br />
             Facilidade nos relacionamentos interpessoais.
-          </p>
+          </p>-->
+            <p>
+              Analista de Qualidade com 3 anos de experiencia, tenho formação e
+              mestrado em Engenharia. Minhas formações garantiram um backgroud
+              sólido para uma visão analítica, busca continua por melhorias e
+              racicíono lógico, essenciais para o crescimento em minha posição
+              atual como Especialista de Testes.
+            </p>
+            <p>
+              Com o desenvolvimento continuo de habilidades em resolução de
+              problemas, análise e entendimento de requisitos, comunicação
+              efetiva e trabalho em equipe pude implementar um padrão para
+              documentação de testes onde trabalho, propor e aplicar melhorias
+              do sistema (features e banco de dados) e auxiliar o time no avanço
+              de análises envolvendo Banco de Dados.
+            </p>
+            <p>
+              Movido pela minha admiração em TI, a busca por aprendizado e
+              crescimento continuo também me alavacam para que possa conquistar
+              uma rápida adaptação ao ambiente e as exigências técnicas dos
+              projetos. Com isso, contribuindo efetivamente para que sejam
+              concluídos, cumprindo os requisitos estimados e garantindo um alto
+              nível de qualidade em cada um deles, além de verifir de forma
+              proativa por oportunidades de evolução tanto dos produtos quanto
+              das pesssoas nos times em que estou envolvido.
+            </p>
+          </div>
+        </article>
+        <article>
+          <h2>
+            Formação Academica
+            <hr />
+          </h2>
+          <div class="date_text_flex">
+            <div>
+              <div class="date_flex">
+                <div class="text_flex1">
+                  2022/06 <br />
+                  - Atualmente
+                </div>
+                <div class="text_flex2">
+                  <div>
+                    <i>Bacharelado em Sistemas de Informação </i
+                    ><em
+                      ><abbr
+                        title="Faculdade de Computação da Universidade Federal de Uberlândia"
+                        ><a href="http://www.facom.ufu.br/" target="_blank"
+                          >(FACOM – UFU)</a
+                        ></abbr
+                      ></em
+                    >
+                  </div>
+                  <div>
+                    <!-- <p>Após concluir, colocar o título do tcc</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="date_flex">
+                <div class="text_flex1">2017/08 – 2020/03</div>
+                <div class="text_flex2">
+                  <div>
+                    <i
+                      >Mestre em Engenharia de Computação na área de Visão
+                      Computacional </i
+                    ><em
+                      ><abbr
+                        title="Faculdade de Engenharia Elétrica da Universidade Federal de Uberlândia"
+                        ><a href="http://www.feelt.ufu.br/" target="_blank"
+                          >(FEELT – UFU)</a
+                        ></abbr
+                      ></em
+                    >
+                  </div>
+                  <div>
+                    <p>
+                      Dissertação: Detecção de Linhas e Falhas de Plantio por
+                      meio da Associação de um Algoritmo Genético para
+                      Multilimiarização à Transformada Discreta de Wavelet e
+                      Transformada de Hough Probabilística e como Mobile Cloud
+                      Computing pode Auxiliar na Melhoria de Desempenho
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="date_flex">
+                <div class="text_flex1">2010/08 – 2016/06</div>
+                <div class="text_flex2">
+                  <div>
+                    <i>Bacharel em Engenharia Mecatrônica</i>
+                    <abbr
+                      title="Faculdade de Engenharia Mecânica da Universidade Federal de Uberlândia"
+                      ><a href="http://www.femec.ufu.br/" target="_blank"
+                        ><em>(FEMEC – UFU)</em></a
+                      ></abbr
+                    >
+                  </div>
+                  <div>
+                    <p>
+                      TCC: Mecanismo de Resposta com Realimentação Efetiva,
+                      Associado ao Controle de Iluminação Residencial,
+                      utilizando Arduino e App Inventor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article>
@@ -61,6 +180,7 @@
                         Condução de testes manuais e validação de qualidade com
                         identificação e documentação dos erros, falhas e/ou bugs
                       </li>
+                      <li>Homologação de correções realizadas</li>
                       <li>
                         Estimativa da necessidade/prioridade de testes, criação
                         e execução de cenários de teste e sugestões de correções
@@ -114,11 +234,13 @@
                     <i>Dardani Sistemas, Uberlândia - MG</i>
                   </div>
                   <div>
-                    Realização de testes manuais, elaboração de solicitações de
-                    correção e suporte ao usuário.
                     <ul>
-                      <li>Analista de Banco de Dados</li>
-                      <li>Especialista em Banco de Dados</li>
+                      <li>
+                        Condução de testes manuais e validação de qualidade com
+                        identificação e documentação dos erros, falhas e/ou bugs
+                      </li>
+                      <li>Homologação de correções realizadas</li>
+                      <li>Suporte ao usuário em demandas diárias</li>
                     </ul>
                   </div>
                 </div>
@@ -135,13 +257,24 @@
                     <i>CroSoften, Uberlândia - MG</i>
                   </div>
                   <div>
-                    Organização de daily mettings, acompanhamento dos projetos,
-                    verificação e remoção de impedimentos. <br />
-                    Contato com clientes para alinhamentos de demandas e prazos
-                    e acompanhamento das apresentações das sprints finalizadas.
                     <ul>
-                      <li>Analista de Banco de Dados</li>
-                      <li>Especialista em Banco de Dados</li>
+                      <li>
+                        Organização de daily mettings e acompanhamento de todas
+                        as cerimônias Scrum, buscando garantir uma comunicação
+                        efetiva e promover a solução de problemas
+                      </li>
+                      <li>
+                        Acompanhamento dos times de diversos projetos,
+                        verificação e remoção de impedimentos e validação do
+                        cumprimento do backlog da sprint
+                      </li>
+                      <li>
+                        Contato com clientes para alinhamentos de demandas e
+                        prazos e acompanhamento das apresentações das sprints
+                        finalizadas para compreenção do atendimento às
+                        espectativas e possíveis novas exigências ou
+                        modificações do projeto
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -149,92 +282,10 @@
             </div>
           </div>
         </article>
-
-        <article>
-          <h2>
-            Formação Academica
-            <hr />
-          </h2>
-          <div class="date_text_flex">
-            <div>
-              <div class="date_flex">
-                <div class="text_flex1">
-                  2022/06 <br />
-                  - Atualmente
-                </div>
-                <div class="text_flex2">
-                  <div>
-                    <i>Bacharelado em Sistemas de Informação </i
-                    ><em>(FACOM – UFU)</em>
-                    <!-- (<abbr
-                      title="Faculdade de Engenharia Mecânica"
-                      ><a href="http://www.femec.ufu.br/">FEMEC - UFU</a></abbr
-                    >) -->
-                  </div>
-                  <div>
-                    <!-- <p>Após concluir, colocar o título do tcc</p> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="date_flex">
-                <div class="text_flex1">2017/08 - 2020/03</div>
-                <div class="text_flex2">
-                  <div>
-                    <i
-                      >Mestre em Engenharia de Computação na área de Visão
-                      Computacional </i
-                    ><em>(FEELT – UFU)</em>
-                    <!-- (<abbr
-                      title="Faculdade de Engenharia Mecânica"
-                      ><a href="http://www.femec.ufu.br/">FEMEC - UFU</a></abbr
-                    >) -->
-                  </div>
-                  <div>
-                    <p>
-                      Dissertação: Detecção de Linhas e Falhas de Plantio por
-                      meio da Associação de um Algoritmo Genético para
-                      Multilimiarização à Transformada Discreta de Wavelet e
-                      Transformada de Hough Probabilística e como Mobile Cloud
-                      Computing pode Auxiliar na Melhoria de Desempenho
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="date_flex">
-                <div class="text_flex1">2010/08 - 2016/06</div>
-                <div class="text_flex2">
-                  <div>
-                    <i>Bacharel em Engenharia Mecatrônica</i
-                    ><em> (FEMEC – UFU)</em>
-                    <!-- (<abbr
-                      title="Faculdade de Engenharia Mecânica"
-                      ><a href="http://www.femec.ufu.br/">FEMEC - UFU</a></abbr
-                    >) -->
-                  </div>
-                  <div>
-                    <p>
-                      TCC: Mecanismo de Resposta com Realimentação Efetiva,
-                      Associado ao Controle de Iluminação Residencial,
-                      utilizando Arduino e App Inventor.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--<a href="./experiencias.html"
-            >Veja as experiencias profissinais em detalhes</a
-          > -->
-        </article>
       </section>
 
-      <aside class="sidebar">
-        <nav class="nav">
+      <aside class="col-md-4">
+        <nav>
           <h3>
             Informações Pessoais
             <hr />
@@ -252,6 +303,12 @@
           <b>Telefone</b><br />
           <!--<a href="https://wa.me/5534998122506" target="_blank">Vem de zap</a>-->
           <a href="tel: 034-99999-9999">(34) 99812-2506</a><br />
+          <b>Endereço</b>
+          <address>
+            R. Renato de Oliveira Grama, bairro Jd. Inconfidência, Uberlândia -
+            MG
+          </address>
+
           <h3>
             Soft Skills
             <hr />

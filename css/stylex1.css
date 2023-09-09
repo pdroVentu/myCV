@@ -5,7 +5,8 @@ body {
   line-height: 1.5;
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.5rem;
+  font-size: small;
 }
 
 header {
@@ -13,17 +14,14 @@ header {
   color: #ffffff;
   font-family: "Helvetica Neue", sans-serif;
   line-height: 0.5;
-  /*width: 80%;*/
   margin: 0 auto;
-  padding: 15px;
+  padding: 1rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 main {
   background-color: #ffffff;
-  /*margin: 0 auto;*/
-  /*padding: 20px;*/
   border-radius: 10px;
   display: flex;
 }
@@ -41,33 +39,28 @@ section {
 }
 
 div {
-  display: block;
+  text-align: justify;
 }
 
 aside {
-  flex: 3 1 0%;
   background-color: #f4f4f4;
   color: #363d49;
   font-size: 1em;
-  padding-left: 15px;
+  padding-left: 1rem;
+  padding-top: 2rem;
 }
 
-.nav {
-  position: relative;
-  margin: 0 5%;
-  text-align: left;
-  /*top: 50%;
-    transform: translateY(-50%);*/
-  /*font-weight: bold;*/
-  font-size: small;
+ul {
+  list-style: none;
+  padding-left: 0.8rem;
 }
-
 .date_text_flex {
   display: flex;
   flex-direction: column;
 }
 
 .date_flex {
+  flex-direction: column;
   display: flex;
   padding-right: 0.25rem;
   font-size: 0.75rem;
@@ -76,9 +69,20 @@ aside {
 .text_flex1 {
   flex: 1 1;
   padding-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .text_flex2 {
   flex: 5 1;
-  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .text_flex1 {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
 }
