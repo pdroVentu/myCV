@@ -22,7 +22,7 @@ header {
 
 main {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
   display: flex;
 }
 
@@ -48,6 +48,7 @@ aside {
   font-size: 1em;
   padding-left: 1rem;
   padding-top: 2rem;
+  border-bottom-right-radius: 10px;
 }
 
 ul {
@@ -79,6 +80,12 @@ ul {
 @media (max-width: 768px) {
   body {
     width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  aside {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .text_flex1 {
     flex-direction: column;
