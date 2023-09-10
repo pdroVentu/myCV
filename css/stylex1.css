@@ -51,7 +51,7 @@ aside {
   border-bottom-right-radius: 10px;
 }
 
-ul {
+aside ul {
   list-style: none;
   padding-left: 0.8rem;
 }
@@ -61,7 +61,6 @@ ul {
 }
 
 .date_flex {
-  flex-direction: column;
   display: flex;
   padding-right: 0.25rem;
   font-size: 0.75rem;
@@ -71,6 +70,7 @@ ul {
   flex: 1 1;
   padding-right: 1rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .text_flex2 {
@@ -87,8 +87,10 @@ ul {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  .text_flex1 {
+  .date_flex {
     flex-direction: column;
+  }
+  .text_flex1 {
     margin-top: 1rem;
     margin-bottom: 0.2rem;
   }
